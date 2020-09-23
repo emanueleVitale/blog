@@ -2,6 +2,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #dcfdf8c2; /*weird white*/
+
 }
 
 
@@ -27,6 +28,10 @@ ul {
     width:90%;
     align-self: left;
     background-color: transparent;
+}
+
+li {
+    opacity:1;
 }
 
 table {
