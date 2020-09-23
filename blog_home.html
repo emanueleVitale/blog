@@ -1,2 +1,137 @@
+<!DOCTYPE html>
 <html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Viral Blog</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+
+    <link rel="stylesheet" href="ext_style.css">
+</head>
+
+<body>
+    <nav style="background-image:url('img/pexels-statsmarch.jpg');
+    height:200px;
+    background-size:cover;/* Resize the background image to cover the entire container */
+    background-color:#ff0000">
+        <ul style="resize:vertical; height:100%;">
+
+            <li style="resize:vertical; height:30%;">
+                <a href="blog_ContactUs.html"
+                   target=”_blank” alt="This is  link to contacts"
+                   style="font-size:x-large;"
+                   >Contacts!</a>
+            </li>
+
+            <li style="resize:vertical; height:30%;">
+                <a href="blog_Tarifs.html"
+                   target=”_blank” alt=”Questo è
+                   un collegamento ai prezzi”
+                   style="font-size:x-large;"
+                   >Tarifs!</a>
+            </li>
+
+            <li style="resize:vertical; height:30%;">
+                <a href="blog_Video.html"
+                   target=”_blank” alt="This is a link to some content"
+                    style="font-size:x-large;"
+                   >Some Content</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+
+    <article>
+        <header>
+            <h1>Viral Blog</h1>
+            <h2>Home</h2>
+        </header>
+
+        <p>
+            This is a blog website home
+            <br>
+            We like to keep things comfy.
+            <br>
+            Our aim is to discuss topics related to viral stuff.
+            <br>
+            Please, enjoy!
+            <br>
+            There is a pool, too!
+            <br>
+        </p>
+    </article>
+
+    <article>
+        <header>
+            <h3>Our main feed:</h3>
+        </header>
+        <ul>
+
+            <li>Covid</li>
+
+            <li>Disease</li>
+
+            <li>Good Music with No Copirights Infringement</li>
+
+        </ul>
+    </article>
+
+    <article>
+        <header>
+            <h3>
+                Here are some posts:
+            </h3>
+        </header>
+
+        <nav>
+            <img src=img/pexels-covidviral.jpg width="" height=""
+                name="photo1" style="margin:auto;border:0;box-sizing:border-box">
+
+            <img src=img/pexels-bikemask.jpg width="" height=""
+                 name="photo2" style="margin:auto;border:10px;box-sizing: border-box">
+
+            <img src=img/sunset-pool-cafe-0.jpeg width="700" height="450"
+                 name="photopool" style="margin:auto;border:10px">
+        </nav>
+    </article>
+
+    <h3>Find us:</h3>
+
+    <p id="demo">Where is our Hotel?</p>
+    <button onclick="getLocation()">Click here, please, for location!</button>
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                //funzione supportata o autorizzata,
+                //richiamo la funzione di callback showPosition
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation not supported";
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                " Longitude: " + position.coords.longitude;
+        }
+    </script>
+
+
+
+    <footer>
+        <h5>
+            Made by Emanuele Vitale.
+        </h5>
+    </footer>
+
+
+</body>
 </html>
+
