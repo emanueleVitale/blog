@@ -1,0 +1,155 @@
+﻿
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Viral Blog</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="ext_style.css">
+</head>
+
+<body>
+    <nav class="topnav"
+         style="background-image:url('img/pexels-statsmarch.jpg');
+    height:200px;
+    opacity:0.8;/*still not able to rendeer opacity on the inheritance*/
+    background-size:cover;/* Resize the background image to cover the entire container */
+    background-color:#ff0000">
+        <div style="resize:vertical; height:100%; opacity:1;">
+            <!--<li style="resize:vertical; height:25%;">-->
+            <a href="blog_home.html"
+               target=”_blank” alt="This is  link to home"
+               style="font-size:x-large;opacity:1;"
+               class="active">
+                Home
+            </a>
+            <!--</li>-->
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <!--<li style="resize:vertical; height:25%;">-->
+                <a href="blog_ContactUs.html"
+                   target=”_blank” alt="This is  link to contacts"
+                   style="font-size:x-large;">
+                    Contacts!
+                </a>
+                <!--</li>-->
+                <!--<li style="resize:vertical; height:25%;">-->
+                <a href="blog_Tarifs.html"
+                   target=”_blank” alt="-this links to tarifs"
+                   style="font-size:x-large;">
+                    Tarifs!
+                </a>
+                <!--</li>-->
+                <!--<li style="resize:vertical; height:25%;">-->
+                <a href="blog_Video.html"
+                   target=”_blank” alt="This is a link to some content"
+                   style="font-size:x-large;">
+                    Some Content
+                </a>
+                <!--</li>-->
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <article>
+        <header>
+            <h1>Viral Blog</h1>
+            <h2>Post Page</h2>
+        </header>
+
+        <p>
+            This is a blog website POST page
+            <br>
+            We like to keep things comfy.
+            <br>
+            Our aim is to discuss topics related to viral stuff.
+            <br>
+            Please, enjoy!
+            <br>
+            There is a pool, too!
+            <br>
+        </p>
+    </article>
+
+    <!--<article>
+        <header>
+            <h3>Our main feed:</h3>
+        </header>
+        <ul>
+
+            <li>Covid</li>
+
+            <li>Disease</li>
+
+            <li>Good Music with No Copirights Infringement</li>
+
+        </ul>
+    </article>-->
+
+    <article>
+        <img src=img/pexels-covidviral.jpg width="" height=""
+             name="photo1" style="margin:auto;border:0;box-sizing:border-box">
+    </article>
+
+    <!--<h3>Find us:</h3>
+
+    <p id="demo">Where is our Hotel?</p>
+    <button onclick="getLocation()">Click here, please, for location!</button>
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                //funzione supportata o autorizzata,
+                //richiamo la funzione di callback showPosition
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation not supported";
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                " Longitude: " + position.coords.longitude;
+        }
+    </script>-->
+
+
+
+    <footer>
+        <h5>
+            Made by Emanuele Vitale.
+        </h5>
+    </footer>
+
+    <!--Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
+
